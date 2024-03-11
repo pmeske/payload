@@ -2,6 +2,7 @@ import { buildConfigWithDefaults } from '../buildConfigWithDefaults'
 import { devUser } from '../credentials'
 import { MediaCollection } from './collections/Media'
 import { PostsCollection, postsSlug } from './collections/Posts'
+import Users from './collections/Users'
 import { MenuGlobal } from './globals/Menu'
 
 export default buildConfigWithDefaults({
@@ -9,6 +10,7 @@ export default buildConfigWithDefaults({
   collections: [
     PostsCollection,
     MediaCollection,
+    Users
     // ...add more collections here
   ],
   globals: [
